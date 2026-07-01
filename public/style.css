@@ -338,6 +338,16 @@ h2 {
   font-size: 1.08rem;
 }
 
+.post-eyecatch {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 clamp(32px, 5vw, 52px);
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
 .post-body h2 {
   margin-top: 46px;
   font-size: clamp(1.45rem, 3vw, 2.1rem);

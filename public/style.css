@@ -197,7 +197,8 @@ h2 {
 }
 
 .article-card {
-  min-height: 310px;
+  overflow: hidden;
+  min-height: 380px;
   background: #fffaf0;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -206,10 +207,9 @@ h2 {
 
 .article-card a {
   display: flex;
-  min-height: 310px;
+  min-height: 380px;
   height: 100%;
   flex-direction: column;
-  padding: 28px;
 }
 
 .article-card:hover {
@@ -217,9 +217,24 @@ h2 {
   transition: transform 180ms ease;
 }
 
+.article-thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #dfe8dd;
+}
+
+.article-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px 24px 24px;
+}
+
 .category {
   align-self: flex-start;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   padding: 4px 10px;
   border-left: 3px solid var(--teal);
   color: var(--green);

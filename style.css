@@ -380,6 +380,19 @@ h2 {
   background: #fffaf0;
 }
 
+.conversation-note {
+  margin: 0;
+  padding: clamp(22px, 4vw, 36px);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf0;
+  color: #34423e;
+  font: inherit;
+  line-height: 1.9;
+}
+
 .back-link {
   display: inline-flex;
   margin-top: 26px;
